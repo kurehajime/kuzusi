@@ -179,7 +179,7 @@ func checkCollision(st state) state {
 	}
 	//バーとの衝突判定
 	if st.Ball.X >= st.BarX && st.Ball.X <= st.BarX+_barWidth &&
-		(st.Ball.Y == _height-2 || st.Ball.Y == _height-3) {
+		(st.Ball.Y == _height-2) {
 		st.Vec.Y = -1
 		if st.Ball.X <= st.BarX+(_barWidth/2) {
 			st.Vec.X = -1
